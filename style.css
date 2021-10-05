@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/*  */
+
+:root {
+    --primary-pale-blue: hsl(225, 100%, 94%);
+    --primary-bright-blue: hsl(245, 75%, 52%);
+    --neutral-very-pale-blue: hsl(225, 100%, 98%);
+    --neutral-desaturated-blue: hsl(224, 23%, 55%);
+    --neutral-dark-blue: hsl(223, 47%, 23%);
+    --medium-font-weight: 500;
+    --bold-font-weight: 700;
+    --black-font-weight: 900;
+    --hover-color: #766cf1;
+}
+
+* {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-size: cover;
+}
+
+
+/* Feel free to remove these styles or customise in your own stylesheet 👍 */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* Card */
+
+.card {
+    max-width: 450px;
+    min-width: 325px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 15px 15px 0px #c6cff6;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: var(--black-font-weight);
+    color: var(--neutral-dark-blue);
+}
+
+.card-text {
+    color: var(--neutral-desaturated-blue);
+}
+
+.card ul li.list-group-item {
+    border-radius: 10px;
+    background-color: var(--neutral-very-pale-blue);
+}
+
+.card ul.list-group.list-group-flush,
+.card ul.list-group.list-group-flush li {
+    border: none;
+}
+
+.card ul li .plan .plan-name {
+    color: var(--neutral-dark-blue);
+    font-weight: var(--black-font-weight);
+}
+
+.card ul li .plan .plan-price {
+    color: var(--neutral-desaturated-blue);
+}
+
+.card ul li .change-btn {
+    color: var(--primary-bright-blue);
+    font-weight: var(--bold-font-weight);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+/* Button */
+
+.btn {
+    border-radius: 10px;
+}
+
+.proceed-btn {
+    color: white;
+    font-weight: var(--bold-font-weight);
+    background-color: var(--primary-bright-blue);
+    box-shadow: 0px 20px 10px 0px hsl(225, 100%, 94%);
+}
+
+.cancel-btn {
+    color: var(--neutral-desaturated-blue);
+    font-weight: var(--bold-font-weight);
+}
+
+
+/* hover */
+
+.proceed-btn:hover {
+    color: white;
+    background-color: var(--hover-color);
+}
+
+.card ul li .change-btn:hover {
+    color: var(--hover-color);
+    text-decoration: none;
+}
+
+.card ul li .cancel:hover {
+    color: var(--neutral-dark-blue);
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    body {
+        background: hsl(225, 100%, 94%) url('images/pattern-background-mobile.svg') no-repeat left top;
+        background-size: cover;
+    }
+    .card {
+        width: 325px;
+    }
+    .card ul {
+        font-size: 12px;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    body {
+        background: hsl(225, 100%, 94%) url('images/pattern-background-mobile.svg') no-repeat left top;
+        background-size: cover;
+    }
+    /* .card {
+        width: 450px;
+    } */
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    body {
+        background: hsl(225, 100%, 94%) url('images/pattern-background-desktop.svg') no-repeat left top;
+        background-size: cover;
+    }
+    .card {
+        width: 450px;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    body {
+        background: hsl(225, 100%, 94%) url('images/pattern-background-desktop.svg') no-repeat left top;
+        background-size: cover;
+    }
+    .card {
+        width: 450px;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    body {
+        background: hsl(225, 100%, 94%) url('images/pattern-background-desktop.svg') no-repeat left top;
+        background-size: cover;
+    }
+    .card {
+        width: 450px;
+    }
+    .card ul {
+        font-size: 16px;
+    }
+}
